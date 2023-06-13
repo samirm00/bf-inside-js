@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 console.log('-- begin --');
@@ -13,9 +11,9 @@ let path = '';
 if (value1 && !value2) {
   path = 'if';
 } else if (!value1 || !value2) {
-  path = 'else if';
+  path = 'else if'; // unreachable path
 }
 
-console.assert(path === _);
+console.assert(path === 'if');
 
 console.log('-- end --');

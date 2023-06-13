@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 console.log('-- begin --');
@@ -15,9 +13,9 @@ if (value1 === value2) {
 } else if (typeof value1 === typeof value2) {
   path = 'else if 1';
 } else if (Number(value1) === Number(value2)) {
-  path = 'else if 2';
+  path = 'else if 2'; // unreachable path
 }
 
-console.assert(path === _);
+console.assert(path === 'else if 1');
 
 console.log('-- end --');
