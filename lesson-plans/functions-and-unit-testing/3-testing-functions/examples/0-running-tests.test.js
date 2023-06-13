@@ -1,6 +1,6 @@
 'use strict';
 
-/* Running Tests
+/* Running its
 
   For the first time, you will be using code that relies on LIBRARIES
   libraries are code that other people wrote, and you use
@@ -10,20 +10,18 @@
   libraries will make certain parts of your life much easier
   but other parts will become more complicated
 
-  all exercises that have tests (file.test.js) in this repository have 3 global dependencies:
+  all exercises that have its (file.it.js) in this repository have 3 global dependencies:
   - describe
-  - it
+  - it or test
   - expect
   these files WILL NOT RUN IN JS TUTOR
 
-  to run tested files you will need to either:
+  to run ited files you will need to either:
   - use `study-lenses` + your browser's debugger
-  - use terminal with the command `npm run test -- ./path/to/file.test.js`
-
-
+  - use terminal with the command `npm run it -- ./path/to/file.it.js`
 */
 
-// go ahead and try running these lines of code with and without tests enabled:
+// go ahead and try running these lines of code with and without its enabled:
 
 describe('boolean values', () => {
   it('true is true', () => {
@@ -31,5 +29,11 @@ describe('boolean values', () => {
   });
   it('false is false', () => {
     expect(false).toEqual(false);
+  });
+  it('greater or equal to 2 ', () => {
+    expect(3).toBeGreaterThanOrEqual(2);
+  });
+  it('to be truthy', () => {
+    expect(3).toBeTruthy();
   });
 });

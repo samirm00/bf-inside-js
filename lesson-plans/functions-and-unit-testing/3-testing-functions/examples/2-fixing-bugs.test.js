@@ -20,9 +20,12 @@
  * @returns {string} The input string, but backwards.
  */
 const reverseString = (str) => {
+  if (typeof str !== 'string') {
+    return;
+  }
   let backwards = '';
   for (const char of str) {
-    backwards += char;
+    backwards = char + backwards;
   }
   return backwards;
 };
@@ -47,5 +50,10 @@ describe('reverseString: reverses any string', () => {
   it('reverses all sorts of crazy things', () => {
     const actual = reverseString('(-+=<8>=+-)');
     expect(actual).toEqual(')-+=>8<=+-(');
+  });
+
+  it('pass nothing', () => {
+    const actual = reverseString();
+    expect(actual).toEqual('tset');
   });
 });
