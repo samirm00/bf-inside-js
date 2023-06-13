@@ -25,13 +25,8 @@ I grew up in ${myHomeTown},
 and had a dog named ${myDog}`;
 console.log(storyTemplate);
 
-const introConcat = 'i am ' + myName;
-const storyConcat =
-  introConcat +
-  '\nI grew up in ' +
-  myHomeTown +
-  ',\nand had a dog named ' +
-  myDog;
+const introConcat = `i am ${myName}`;
+const storyConcat = `${introConcat}\nI grew up in ${myHomeTown},\nand had a dog named ${myDog}`;
 console.log(storyConcat);
 
 console.log('-- end --');
