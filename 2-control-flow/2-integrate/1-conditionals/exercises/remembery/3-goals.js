@@ -1,5 +1,3 @@
-// #todo
-
 'use strict';
 
 alert(`Remembery, the game of remembering.
