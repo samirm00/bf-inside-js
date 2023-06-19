@@ -33,9 +33,11 @@ console.log(y); // should print 'b'
 z = 'c';
 console.log(z); // should print 'c'
 
-y += 'd';
+y = y + 'd';
 console.log(y); // should print 'bd'
 
+y = y + 'e';
+console.log(y);
 console.log(x); // should print 'a'
 
 console.log('-- end --');

@@ -1,5 +1,21 @@
 'use strict';
 
+// /**
+//  *  repeat a text repeats times
+//  * @param {string} text, the text to repeat
+//  * @param {number} repeats, number of times to repeat text.
+//  * @return {string} the repeated string
+//  */
+
+// const repeatString = (text, repeats) => {
+//   let newText = '';
+//   for (let i = 0; i < repeats; i++) {
+//     newText += text;
+//   }
+
+//   return newText;
+// };
+
 /**
  * Repeats a string a specific number of times.
  *
@@ -7,6 +23,7 @@
  * @param {number} repeats - The number of times to repeat.
  * @returns {string} The repeated string.
  */
+
 const repeatString = (text, repeats) => {
   return text.repeat(repeats);
 };

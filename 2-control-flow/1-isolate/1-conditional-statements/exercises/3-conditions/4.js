@@ -13,11 +13,11 @@ const value2 = 200;
 const value3 = false;
 let path = '';
 
-if (!value1 && value3) {
+if (!value1 && value2 === 1 && value3) {
   path = 'if';
-} else if (value1 && value3) {
+} else if (value1 === value2 && value3) {
   path = 'else if 1';
-} else if (value1 && value2) {
+} else if (value1 === '200' && value2 === 200 && !value3) {
   path = 'else if 2';
 } else {
   path = 'else';

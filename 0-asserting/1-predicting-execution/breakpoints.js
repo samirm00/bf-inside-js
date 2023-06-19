@@ -18,11 +18,23 @@
 
 */
 
-const firstName = 'Brobes';
+// const firstName = 'Brobes';
 
-const lastName = 'Pierre';
+// const lastName = 'Pierre';
 
-// use a breakpoint on line this line to pause before fullName's value is assigned
-const fullName = firstName + ' ' + lastName;
+// // use a breakpoint on line this line to pause before fullName's value is assigned
+// const fullName = firstName + ' ' + lastName;
 
-console.assert(fullName === 'Brobes Pierre');
+// console.assert(fullName === 'Brobes Pierre');
+
+// string
+// const firstName = 'Jane';
+
+// console.log(firstName.toLowerCase());
+
+// arrays
+const names = ['Neha', 'Inna', 'Ali', 'Rabita', 'Preethi', 'Ervin'];
+
+names.forEach((name) => {
+  console.log(name);
+});

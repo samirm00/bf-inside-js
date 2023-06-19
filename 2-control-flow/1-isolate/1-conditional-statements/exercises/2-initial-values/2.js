@@ -2,23 +2,24 @@
 
 console.log('-- begin --');
 
-// there may be more than one correct answer
-//  try finding as many as you can
-//  what do all the solutions have in common?
-// or maybe the asserted path is unreachable!
+// can you find at least one solution to reach each path?
+//  what do all solutions to the same path have in common?
+// or maybe there are unreachable paths!
 
-const value1 = '200';
-const value2 = 200;
+const value1 = _;
+const value2 = _;
 let path = '';
 
-if (value1 === value2) {
+if (value1 && !value2) {
   path = 'if';
-} else if (typeof value1 === typeof value2) {
+} else if (!value1 || !value2) {
   path = 'else if 1';
-} else if (Number(value1) === Number(value2)) {
+} else if (value2 && !value1) {
   path = 'else if 2';
+} else {
+  path = 'else';
 }
 
-console.assert(path === 'else if 2');
+console.log(path);
 
 console.log('-- end --');
