@@ -54,7 +54,7 @@ describe('findBigNumbers: finds all the big numbers in an array', () => {
   });
   describe('there are no side-effects', () => {
     it('returns a new array', () => {
-      const argument = [1, 2, 3, 4];
+      const argument = [1, 2, 3, 4, 5, 6];
       const returned = findBigNumbers(argument);
       expect(argument === returned).toEqual(false);
     });

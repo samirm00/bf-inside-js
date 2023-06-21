@@ -12,13 +12,13 @@ while (true) {
   }
 
   // make sure it is long enough to have an "e" in the 5th letter
-  if (userInput.length < 6) {
+  if (userInput.length < 5) {
     alert('too short');
     continue;
   }
 
   // check if the 5th character is an "e" or "E"
-  if (userInput[5].toLowerCase() === 'e') {
+  if (userInput[4].toLowerCase() === 'e') {
     validInput = userInput;
     break;
   }

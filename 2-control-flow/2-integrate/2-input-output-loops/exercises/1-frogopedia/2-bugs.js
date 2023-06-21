@@ -16,7 +16,7 @@ while (!inputIsAboutFrogs) {
     alert('that is not something');
   }
   // regular expression: this works!
-  else if (/frog/i.test(userInput)) {
+  else if (userInput.toLowerCase().includes('frog')) {
     inputIsAboutFrogs = true;
   } else {
     alert('nope, not about frogs.  try again.');
