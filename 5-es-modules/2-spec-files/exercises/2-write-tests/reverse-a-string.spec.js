@@ -1,26 +1,28 @@
-// #todo
-
 import { reverseAString } from './reverse-a-string.js';
 
-describe('it should reverseAString strings', () => {
-  describe('when no argument is passed', () => {
-    it('default parameter is an empty string', () => {
-      expect(reverseAString()).toEqual('');
-    });
+describe('reverser: reverses a string', () => {
+  it('reverses one letter', () => {
+    const returned = reverseAString('a');
+    expect(returned).toEqual('a');
   });
-  describe('when argument is a string', () => {
-    it('the empty string should return an empty string', () => {
-      expect(reverseAString('')).toEqual(_);
-    });
-    it('"toads" should return "sdaot"', () => {
-      expect(reverseAString(_)).toEqual('sdaot');
-    });
-    // write at least 5 more tests
+  it('reverses the empty string', () => {
+    const returned = reverseAString('');
+    expect(returned).toEqual('');
   });
-  describe('when argument is not a string', () => {
-    it('true should return "text is not a string"', () => {
-      expect(reverseAString(true)).toEqual(_);
-    });
-    // write at least 3 more tests
+  it('reverses words with punctuation', () => {
+    const returned = reverseAString('hoy!');
+    expect(returned).toEqual('!yoh');
+  });
+  it('reverses long strings', () => {
+    const returned = reverseAString('!! How is LOUD ??');
+    expect(returned).toEqual('?? DUOL si woH !!');
+  });
+  it('reverses one letter', () => {
+    const returned = reverseAString('a');
+    expect(returned).toEqual('a');
+  });
+  it('has a default parameter', () => {
+    const returned = reverseAString();
+    expect(returned).toEqual('');
   });
 });
