@@ -30,15 +30,15 @@ console.assert(mixed[2] === true, 'Test 3: e');
 
 const complicated = ['a', 'b', 'c', 'f'];
 complicated[4] = 'e';
-const temp = complicated[2];
-complicated[2] = complicated[1];
-complicated[1] = temp;
+const temp = complicated[2]; // c
+complicated[2] = complicated[1]; // b
+complicated[1] = temp; // c
 
-console.assert(complicated.length === _, 'Test 4: length');
-console.assert(complicated[0] === _, 'Test 4: a');
-console.assert(complicated[1] === _, 'Test 4: b');
-console.assert(complicated[2] === _, 'Test 4: c');
-console.assert(complicated[3] === _, 'Test 4: d');
-console.assert(complicated[4] === _, 'Test 4: e');
+console.assert(complicated.length === 5, 'Test 4: length');
+console.assert(complicated[0] === 'a', 'Test 4: a');
+console.assert(complicated[1] === 'c', 'Test 4: b');
+console.assert(complicated[2] === 'b', 'Test 4: c');
+console.assert(complicated[3] === 'f', 'Test 4: d');
+console.assert(complicated[4] === 'e', 'Test 4: e');
 
 console.log('-- end --');

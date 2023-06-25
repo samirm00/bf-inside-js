@@ -26,10 +26,7 @@ for (let i = trees.length - 1; i >= 0; i--) {
   console.log('- ' + tree);
 }
 
-console.log('-- reverse order: for-of ');
-for (const tree of trees) {
-}
-
+console.log('----------------');
 console.log('-- every other item: for ');
 for (let i = 1; i <= trees.length - 1; i += 2) {
   const tree = trees[i];
@@ -41,3 +38,10 @@ for (const tree of trees) {
 }
 
 console.log('-- end --');
+
+console.log('----------------');
+const reversedTree = trees.reverse();
+
+for (const tree of reversedTree) {
+  console.log('- ' + tree);
+}

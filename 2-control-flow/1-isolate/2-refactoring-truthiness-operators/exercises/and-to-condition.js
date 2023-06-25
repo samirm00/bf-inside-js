@@ -7,10 +7,8 @@ console.log('-- begin --');
 // try different values and different types
 const a = 2000;
 console.log(a);
-let isBigNumber = false;
-if (typeof a === 'number' && a > 1000) {
-  isBigNumber = true;
-  console.log(isBigNumber);
-}
+
+const isBigNumber = typeof a === 'number' && a > 1000 ? true : false;
+console.log(isBigNumber);
 
 console.log('-- end --');
