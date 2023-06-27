@@ -1,0 +1,9 @@
+body {
+  background-color: gray;
+}
+
+.message {
+  font-size: 12rem;
+  color: red;
+  margin-top: 12%;
+}
